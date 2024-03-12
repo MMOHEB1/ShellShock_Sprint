@@ -10,9 +10,10 @@ class Player(Turtle):
         super(Player, self).__init__()
         self.shape("turtle")
         self.color("black")
+        self.penup()
+        self.setheading(90)
+        self.goto(0, -250)
 
+    def movement(self):
+        self.forward(10)
 
-    def move_up(self):
-        self.left(90)
-        for i in range(4):
-            self.forward(10)

@@ -10,9 +10,11 @@ screen.tracer(0)
 
 turtle = Player()
 
+
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
-    turtle.move_up()
+    screen.onkey(turtle.movement, "Up")
+    screen.listen()
 

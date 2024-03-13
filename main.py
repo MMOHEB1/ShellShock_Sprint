@@ -9,7 +9,7 @@ screen.setup(width=600, height=600)
 screen.tracer(0)
 
 turtle = Player()
-scoreboard = Scoreboard
+scoreboard = Scoreboard()
 
 
 game_is_on = True

@@ -4,7 +4,7 @@ from turtle import Turtle
 
 class Scoreboard(Turtle):
     def __init__(self):
-        super(Scoreboard, self).__init__()
+        super().__init__()
         self.color("black")
         self.penup()
         self.hideturtle()
@@ -13,8 +13,8 @@ class Scoreboard(Turtle):
 
     def update_scoreboard(self):
         self.clear()
-        self.goto(-350, 350)
-        self.write(self.score, align="center", font=FONT)
+        self.goto(-230, 250)
+        self.write(f"Score: {self.score}", align="center", font=FONT)
 
     def add_score(self):
         self.score += 1

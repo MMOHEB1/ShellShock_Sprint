@@ -10,16 +10,15 @@ screen.tracer(0)
 
 turtle = Player()
 scoreboard = Scoreboard()
+cars = CarManager()
 
+screen.listen()
+screen.onkey(turtle.movement, "Up")
 
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
-    screen.onkey(turtle.movement, "Up")
-    screen.listen()
-    blocks = CarManager()
-    blocks.forward(STARTING_MOVE_DISTANCE)
     if turtle.ycor() >= FINISH_LINE_Y:
         screen.update()
         scoreboard.add_score()

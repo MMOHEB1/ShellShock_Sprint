@@ -9,7 +9,7 @@ class CarManager(Turtle):
     def __init__(self):
         self.all_cars = []
 
-    def create_cars(self):
+    def create_car(self):
         new_car = Turtle("square")
         new_car.shapesize(stretch_wid=2, stretch_len=1)
         new_car.penup()
@@ -17,3 +17,7 @@ class CarManager(Turtle):
         random_y = random.randint(-250, 250)
         new_car.goto(300, random_y)
         self.all_cars.append(new_car)
+
+    def move_car(self):
+        for car in self.all_cars:
+            car.backward(STARTING_MOVE_DISTANCE)

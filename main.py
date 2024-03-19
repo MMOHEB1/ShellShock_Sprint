@@ -31,6 +31,8 @@ while game_is_on:
         if car.distance(turtle) < 20:
             print("hit")
             game_is_on = False
+            game = Player()
+            game.game_over()
     #     need to increase moving increment
 
 

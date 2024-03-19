@@ -1,4 +1,5 @@
 from turtle import Turtle
+from scoreboard import FONT
 
 STARTING_POSITION = (0, -280)
 MOVE_DISTANCE = 10
@@ -20,3 +21,8 @@ class Player(Turtle):
     def reset(self):
         self.goto(STARTING_POSITION)
 
+    def game_over(self):
+        self.penup()
+        self.home()
+        self.write("Game Over", align= "center", font=FONT)
+        self.hideturtle()

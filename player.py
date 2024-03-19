@@ -24,5 +24,5 @@ class Player(Turtle):
     def game_over(self):
         self.penup()
         self.home()
-        self.write("Game Over", align= "center", font=FONT)
+        self.write("Game Over", align="center", font=FONT)
         self.hideturtle()

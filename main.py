@@ -1,7 +1,7 @@
 import time
 from turtle import Screen
 from player import Player, FINISH_LINE_Y
-from car_manager import CarManager, MOVE_INCREMENT, STARTING_MOVE_DISTANCE
+from car_manager import CarManager
 from scoreboard import Scoreboard
 
 screen = Screen()
@@ -33,7 +33,5 @@ while game_is_on:
             game_is_on = False
             game = Player()
             game.game_over()
-    #     need to increase moving increment
-
 
 screen.exitonclick()

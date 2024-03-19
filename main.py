@@ -26,6 +26,8 @@ while game_is_on:
         screen.update()
         scoreboard.add_score()
         turtle.reset()
+    if turtle.distance() < 50:
+        print("hit")
     #     need to increase moving increment
 
 

@@ -26,6 +26,7 @@ while game_is_on:
         screen.update()
         scoreboard.add_score()
         turtle.reset()
+        cars.speed_up()
     for car in cars.all_cars:
         if car.distance(turtle) < 20:
             print("hit")

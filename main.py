@@ -26,10 +26,11 @@ while game_is_on:
         screen.update()
         scoreboard.add_score()
         turtle.reset()
-        for car in cars.all_cars:
-            if car.distance(turtle) < 20:
-                print("hit")
-                game_is_on = False
+    for car in cars.all_cars:
+        if car.distance(turtle) < 20:
+            print("hit")
+            game_is_on = False
     #     need to increase moving increment
 
 
+screen.exitonclick()
